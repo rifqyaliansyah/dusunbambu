@@ -1,3 +1,4 @@
+// Navbar
 let navbar = document.querySelector('.header .navbar');
 
 document.querySelector('#menu-btn').onclick = () => {
@@ -8,10 +9,11 @@ document.querySelector('#close-navbar').onclick = () => {
     navbar.classList.remove('active');
 }
 
+// Sweet Alert
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    // Ambil semua input form
+    // Ngambil semua input form
     var name = document.querySelector('input[placeholder="name"]').value;
     var email = document.querySelector('input[placeholder="email"]').value;
     var message = document.querySelector('input[placeholder="message"]').value;
